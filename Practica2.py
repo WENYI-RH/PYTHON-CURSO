@@ -48,9 +48,8 @@ def menu():
         print("4. Calcular el promedio de ventas")
         print("5. Mostrar el producto con más unidades vendidas")
         print("6. Mostrar el listado de productos")
-        print("7. Salir del menu :c")
-        
-        opcion = input("Seleccione una opción): ")
+          
+        opcion = input("Seleccione una opción: ")
         
         if opcion == '1':
             mostrar_listado_ventas()
@@ -64,11 +63,9 @@ def menu():
             mostrar_producto_mas_unidades()
         elif opcion == '6':
             mostrar_listado_productos()
-        elif opcion == '7':
-            print("Salir del programa .")
             break
         else:
-            print("Opción no válida, por favor ingrese otra opción :C.")
+            print("Opción no válida, por favor ingrese otra opción")
 
 # Mostrar el listado de ventas
 def mostrar_listado_ventas():
@@ -120,7 +117,7 @@ def mostrar_producto_mas_unidades():
         producto_max = max(ventas, key=lambda venta: venta["cantidad"])
         print(f"El producto con más unidades vendidas es: {producto_max['producto']} con {producto_max['cantidad']} unidades.")
     else:
-        print("No hay ventas registradas.")
+        print("No hay ventas registradas")
 
 # Mostrar el listado de productos
 def mostrar_listado_productos():
