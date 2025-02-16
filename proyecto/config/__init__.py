@@ -1,0 +1,1 @@
+# Hace que config sea un módulo de Python
